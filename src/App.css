@@ -1,0 +1,6 @@
+.App {
+}
+.pageContent {
+  background-color: rgb(246, 246, 246);
+  min-height: calc(100vh - 112px);
+}

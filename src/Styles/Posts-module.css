@@ -1,0 +1,138 @@
+/* @media screen and (max-width: 600px) { */
+.allPosts {
+  max-height: calc(100vh - 112px);
+  overflow: auto;
+  padding: 0 5%;
+}
+.post {
+  margin: 3% 0;
+
+  border-bottom: 1px solid rgb(131, 131, 131);
+}
+.post img {
+  width: 100%;
+  border-radius: 2px;
+}
+.post p {
+  font-weight: bold;
+  padding: 5px;
+  float: left;
+}
+.comments {
+  width: 80%;
+}
+.title {
+  text-align: start;
+  padding: 0 0 0 5px;
+  margin: 0;
+}
+.comments .accordion-item {
+  border: 0px !important;
+}
+.showComments {
+  display: flex;
+}
+.showComments a {
+  cursor: pointer;
+  background-color: transparent;
+  color: gray !important;
+  font-weight: bold;
+  border: 0;
+  padding: 5px;
+}
+.showComments button:hover {
+  background-color: transparent;
+  color: grey;
+  border: 0;
+}
+
+.addComment {
+  width: 100%;
+}
+.eachComment {
+  border-bottom: 1px solid gray;
+  padding: 1% 0;
+  display: flex;
+  justify-content: space-between;
+}
+.eachComment div {
+  word-break: break-all;
+  display: block;
+  width: 60%;
+}
+.eachComment .editBtn {
+  height: max-content;
+  background-color: rgb(2, 94, 170);
+  border: 2px solid rgb(2, 94, 170);
+  /* box-shadow: 0 0 5px rgb(170, 2, 2); */
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+}
+.eachComment .deleteBtn {
+  height: max-content;
+  background-color: rgb(170, 2, 2);
+  border: 2px solid rgb(170, 2, 2);
+  /* box-shadow: 0 0 5px rgb(170, 2, 2); */
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+}
+.modal-footer {
+  justify-content: flex-start !important;
+  width: 100%;
+}
+.modal-footer form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.postCommentBtn {
+  border: 0;
+  background-color: transparent;
+  border-left: 2px rgb(44, 44, 44) solid;
+  font-weight: bold;
+  color: rgb(44, 44, 44);
+}
+.postCommentText {
+  width: 100%;
+  border: 0;
+}
+.addPostBtn {
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: rgb(240, 240, 240);
+  box-shadow: 0 0 5px rgb(56, 56, 56);
+  position: fixed;
+  font-size: 25px;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 90px;
+  right: 25px;
+  border: solid 0px rgb(0, 0, 0);
+}
+@media screen and (min-width: 600px) {
+  .allPosts {
+    max-height: calc(100vh - 112px);
+    overflow: auto;
+    padding: 0 15%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .allPosts {
+    max-height: calc(100vh - 112px);
+    overflow: auto;
+    padding: 0 20%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .allPosts {
+    max-height: calc(100vh - 112px);
+    overflow: auto;
+    padding: 0 25%;
+  }
+}
